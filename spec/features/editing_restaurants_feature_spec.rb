@@ -18,8 +18,10 @@ describe 'editing restaurants' do
 	end
 
 	it'can delete a restaurant' do
+		visit '/restaurants'
 		click_link 'Delete this restaurant'
 		expect(page).not_to have_content 'McDonalds'	
 	end
 	
+
 end

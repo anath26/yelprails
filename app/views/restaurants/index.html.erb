@@ -7,6 +7,9 @@
   <h1>
   	<%= link_to restaurant.name, restaurant_path(restaurant) %>
   </h1>
+  <h3>
+  	Created <%= time_ago_in_words restaurant.created_at %> ago
+  </h3>
   <p><%= truncate restaurant.description, length: 140 %></p>
   <%= link_to 'Edit this restaurant', edit_restaurant_path(restaurant) %>
   <%= link_to 'Delete this restaurant', restaurant_path(restaurant), method: :delete, data: { confirm: 'Are you sure?' } %>

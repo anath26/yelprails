@@ -1,3 +1,4 @@
 <h1>Restaurant page for <%= @restaurant.name %></h1>
 
 <p><%= @restaurant.description %></p>
+<h4><%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
